@@ -6,7 +6,7 @@
 	"scripts": {
 		"lint": "eslint './src/**/***.ts'",
 		"flint": "eslint './src/**/***.ts' --fix",
-		"build": "webpack --config webpack.config.js --mode=production",
+		"build": "webpack --config webpack.config.js --mode=production && cp _redirects dist/_redirects",
 		"dev": "webpack serve --hot --config webpack.config.js --mode=development"
 	},
 	"keywords": [],
